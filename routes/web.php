@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
+Route::get('/test', function () {
+    return \Illuminate\Support\Facades\Blade::render('<h1>TEST</h1>');
+});
+
 Route::get('/', function () {
     return view('welcome');
 });
